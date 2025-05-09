@@ -11,7 +11,7 @@ import '../styles/index.css'
 // components
 import Home from './components/Home';
 
-let seconds =562;
+let seconds =0;
 counter = setInterval(()=>{
   ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>

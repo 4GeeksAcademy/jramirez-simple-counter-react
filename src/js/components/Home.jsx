@@ -29,12 +29,13 @@ const Home = (props) => {
 	let uniMil = arrayDigit[2];
 	let decMil = arrayDigit[1];
 	let centMil = arrayDigit[0];*/
-
+	let icono = <i className="fa-solid fa-clock-rotate-left"></i>
 	return (
 		<div className="text-center">
 			<h1>CONTADOR DE SEGUNDOS</h1>
 			<h2>{props.segundos}</h2>
-			<div className="row">
+			<div className="row mx-5 bg bg-dark">
+				<Digit digito={icono}/>
 				{
 					arrayDigit.map((numberToPrint, index) => {
 						return <Digit digito={numberToPrint} key={index} />
